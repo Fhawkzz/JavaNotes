@@ -790,12 +790,12 @@ B.静态初始化（指定内容）：在创建数组的时候，不直接指定
  数据类型[] 数组名称 = { 元素1, 元素2, ... };
 ```
 
--  注意事项
+- 注意事项
 
-   \1. 静态初始化没有直接指定长度，但是仍然会自动推算得到长度。
-   \2. 静态初始化标准格式可以拆分成为两个步骤。
-   \3. 动态初始化也可以拆分成为两个步骤。
-   \4. 静态初始化一旦使用省略格式，就不能拆分成为两个步骤了。
+  \1. 静态初始化没有直接指定长度，但是仍然会自动推算得到长度。
+  \2. 静态初始化标准格式可以拆分成为两个步骤。
+  \3. 动态初始化也可以拆分成为两个步骤。
+  \4. 静态初始化一旦使用省略格式，就不能拆分成为两个步骤了。
 
 - 注意：直接打印数组名称得到的是数组对应的：内存地址哈希值。
 
@@ -833,7 +833,7 @@ B.静态初始化（指定内容）：在创建数组的时候，不直接指定
 #### 5.5数组常见问题
 
 > 1.数组索引越界异常
->  ArrayIndexOutOfBoundsException
+> ArrayIndexOutOfBoundsException
 
 所有的引用类型变量，都可以赋值为一个null值。但是代表其中什么都没有。
 
@@ -1181,7 +1181,7 @@ import java.util.Random;
 注意事项：
  对于ArrayList集合来说，直接打印得到的不是地址值，而是内容。如果内容是空，得到的是空的中括号：[]
 
-> #### 集合（Arraylist）的方法
+> #### （Arraylist）的方法
 
 ```java
 ArrayList<String> list = new ArrayList<>();
@@ -1447,7 +1447,6 @@ public class ObjectDemo {
 ```
 
 > #### Object类的equals方法
->
 
 equals方法的作用
 
@@ -1723,7 +1722,6 @@ public class IntegerDemo {
 ```
 
 > ####  自动拆箱和自动装箱
->
 
 - 自动装箱
 
@@ -1741,7 +1739,6 @@ public class IntegerDemo {
   ```
 
 > ####  int和String类型的相互转换
->
 
 - int转换为String
 
@@ -1872,7 +1869,6 @@ public class IntegerDemo {
   有一个前提条件，数组内的元素一定要按照大小顺序排列，如果没有大小顺序，是不能使用二分查找法的
 
 > #### 冒泡排序 
->
 
 + 冒泡排序概述
 
@@ -2039,7 +2035,6 @@ public class IntegerDemo {
 ####  7.19时间日期类
 
 > #### Date类
->
 
 + 计算机中时间原点
 
@@ -2078,7 +2073,6 @@ public class IntegerDemo {
   ```
 
 > #### Date类常用方法
->
 
 - 常用方法
 
@@ -2110,7 +2104,6 @@ public class IntegerDemo {
   ```
 
 > #### SimpleDateFormat类
->
 
 - SimpleDateFormat类概述
 
@@ -2206,7 +2199,6 @@ public class IntegerDemo {
 #### 7.20JDK8时间日期类
 
 > ####  JDK8新增日期类
->
 
 + LocalDate       表示日期（年月日）  
 + LocalTime       表示时间（时分秒）
@@ -2236,7 +2228,6 @@ public class IntegerDemo {
   ```
 
 > #### LocalDateTime获取方法 
->
 
 + 方法说
 
@@ -2290,7 +2281,6 @@ public class IntegerDemo {
   ```
 
 > ####  LocalDateTime转换方法 
->
 
 + 方法说明
 
@@ -2317,7 +2307,6 @@ public class IntegerDemo {
   ```
 
 > ####  LocalDateTime格式化和解析 
->
 
 + 方法说明
 
@@ -2356,7 +2345,6 @@ public class IntegerDemo {
   ```
 
   > #### LocalDateTime修改方法 
-  >
 
   + 方法说明
 
@@ -2393,7 +2381,6 @@ public class IntegerDemo {
   ### 
 
 > #### Period 方法
->
 
 + 方法说明
 
@@ -2435,7 +2422,6 @@ public class IntegerDemo {
   ```
 
 > #### Duration 方法
->
 
 + 方法说明
 
@@ -2481,7 +2467,6 @@ public class IntegerDemo {
   ![](JavaEE.assets/01_异常体系结构.png)
 
 > #### 编译时异常和运行时异常的区别
->
 
 - 编译时异常
 
@@ -2498,14 +2483,12 @@ public class IntegerDemo {
   ![](JavaEE.assets/02_编译时异常和运行时异常.png)
 
 > #### JVM默认处理异常的方式
->
 
 - 如果程序出现了问题，我们没有做任何处理，最终JVM 会做默认的处理，处理方式有如下两个步骤：
   - 把异常的名称，错误原因及异常出现的位置等信息输出在了控制台
   - 程序停止执行
 
 > #### 查看异常信息 
->
 
 控制台在打印异常信息时,会打印异常类名,异常出现的原因,异常出现的位置
 
@@ -2514,7 +2497,6 @@ public class IntegerDemo {
 ![](JavaEE.assets/03_查看异常信息.png)
 
 > #### throws方式处理异常
->
 
 - 定义格式
 
@@ -2559,7 +2541,6 @@ public class IntegerDemo {
   - 运行时异常因为在运行时才会发生,所以在方法后面可以不写,运行时出现异常默认交给jvm处理
 
 > #### throw抛出异常 
->
 
 + 格式
 
@@ -2604,7 +2585,6 @@ public class IntegerDemo {
   ```
 
 > ####  try-catch方式处理异常
->
 
 - 定义格式
 
@@ -2666,7 +2646,6 @@ public class IntegerDemo {
      注意点:如果多个异常之间存在子父类关系.那么父类一定要写在下面
 
 > #### Throwable成员方法
->
 
 - 常用方法
 
@@ -2714,7 +2693,6 @@ public class IntegerDemo {
   ```
 
 > ####  异常的练习 
->
 
 + 需求
 
@@ -2818,7 +2796,6 @@ public class IntegerDemo {
   ```
 
 > #### 自定义异常
->
 
 + 自定义异常概
 
@@ -2935,5 +2912,2418 @@ public class IntegerDemo {
   }
   ```
 
+### Demo08_String类、static、Arrays类、Math类
 
-## 
+#### 8.1字符串
+
+> 特点
+
+\1. 字符串的内容永不可变。【重点】
+ \2. 正是因为字符串不可改变，所以字符串是可以共享使用的。
+ \3. 字符串效果上相当于是char[]字符数组，但是底层原理是byte[]字节数组。
+
+####  8.2String三种构造方法：
+
+ public String()：创建一个空白字符串，不含有任何内容。
+ public String(char[] array)：根据字符数组的内容，来创建对应的字符串。
+ public String(byte[] array)：根据字节数组的内容，来创建对应的字符串。
+
+####  8.3String一种直接创建
+
+ String str = "Hello"; // 右边直接用双引号
+ 注意：直接写上双引号，就是字符串对象。
+
+#### 8.4字符串常量池
+
+程序当中直接写上的双引号字符串，就在字符串常量池中。
+ 对于基本类型来说，= =是进行数值的比较。
+ 对于引用类型来说，= =是进行【地址值】的比较。
+
+例：
+
+```java
+public static void main(String[] args) {
+   String str1 = "abc";
+   String str2 = "abc";
+   char[] charArray = {'a', 'b', 'c'};
+   String str3 = new String(charArray);
+   System.out.println(str1 == str2); // true
+   System.out.println(str1 == str3); // false
+   System.out.println(str2 == str3); // false
+```
+
+​                      ![image-20210402004901093](JavaEE.assets/image-20210402004901093.png)         
+
+= =是进行对象的地址值比较，如果确实需要字符串的内容比较，可以使用两个方法：
+
+```java
+ public boolean equals(Object obj)//参数可以是任何对象，只有参数是一个字符串并且内容相同的才会给true；否则返回false。
+```
+
+
+
+-  注意事项：
+   \1. 任何对象都能用Object进行接收。
+   \2. equals方法具有对称性，也就是a.equals(b)和b.equals(a)效果一样。
+   \3. 如果比较双方一个常量一个变量，推荐把常量字符串写在前面。
+   推荐："abc".equals(str)  不推荐：str.equals("abc")
+   public boolean equalsIgnoreCase(String str)：忽略大小写，进行内容比较。
+
+例
+
+```java
+public static void main(String[] args) {
+ String str1 = "Hello";
+ String str2 = "Hello";
+ char[] charArray = {'H', 'e', 'l', 'l', 'o'};
+ String str3 = new String(charArray);
+ （写法）System.out.println(str1.equals(str2)); // true
+ System.out.println(str2.equals(str3)); // true
+ System.out.println(str3.equals("Hello")); // true
+ System.out.println("Hello".equals(str1)); // true
+ String str4 = "hello";
+ System.out.println(str1.equals(str4)); // false
+ System.out.println("=================");
+ String str5 = null;
+ System.out.println("abc".equals(str5)); // 推荐：false
+ // System.out.println(str5.equals("abc")); // 不推荐：报错，空指针异常NullPointerException
+ System.out.println("=================");
+ String strA = "Java";
+ String strB = "java";
+ System.out.println(strA.equals(strB)); // false，严格区分大小写
+ （写法）System.out.println(strA.equalsIgnoreCase(strB)); // true，忽略大小写
+ // 注意，只有英文字母区分大小写，其他都不区分大小写
+ System.out.println("abc一123".equalsIgnoreCase("abc壹123")); // false}
+```
+
+#### 8.5String当中与获取相关的常用方法
+
+>  1.public int length()：获取字符串当中含有的字符个数，拿到字符串长度。
+>  2.public String concat(String str)：将当前字符串和参数字符串拼接成为返回值新的字符串。
+>  3.public char charAt(int index)：获取指定索引位置的单个字符。（索引从0开始。）
+>  4.public int indexOf(String str)：查找参数字符串在本字符串当中首次出现的索引位置，如果没有返回-1值。
+
+例
+
+```java
+public static void main(String[] args) {
+ // 获取字符串的长度
+ int length = "asdasfeutrvauevbueyvb".length();
+ System.out.println("字符串的长度是：" + length);
+ // 拼接字符串   
+ String str1 = "Hello";
+ String str2 = "World";
+ String str3 = str1.concat(str2);
+ System.out.println(str1); // Hello，原封不动
+ System.out.println(str2); // World，原封不动
+ System.out.println(str3); // HelloWorld，新的字符串System.out.println("==============");
+ // 获取指定索引位置的单个字符
+ char ch = "Hello".charAt(1);
+ System.out.println("在1号索引位置的字符是：" + ch);
+ System.out.println("==============");
+ // 查找参数字符串在本来字符串当中出现的第一次索引位置
+ // 如果根本没有，返回-1值
+ String original = "HelloWorldHelloWorld";
+ int index = original.indexOf("llo");
+ System.out.println("第一次索引值是：" + index); // 2
+ System.out.println("HelloWorld".indexOf("abc")); // -1
+```
+
+#### 8.6字符串的截取方法
+
+>  1.public String substring(int index)：截取从参数位置一直到字符串末尾，返回新字符串。
+>  2.public String substring(int begin, int end)：截取从begin开始，一直到end结束，中间的字符串。
+
+ 备注：[begin,end)，包含左边，不包含右边。
+
+例
+
+```java
+public static void main(String[] args) {
+
+String str1 = "HelloWorld";
+ String str2 = str1.substring(5);
+ System.out.println(str1); // HelloWorld，原封不动 System.out.println(str2); // World，新字符串
+ System.out.println("================");
+ String str3 = str1.substring(4, 7);
+ System.out.println(str3); // oWo
+ System.out.println("================");
+```
+
+#### 8.7String当中与转换相关的常用方法
+
+>  1.public char[] toCharArray( )：将当前字符串拆分成为字符数组作为返回值。
+>  2.public byte[] getBytes()：获得当前字符串底层的字节数组。
+>  3.public String replace(CharSequence oldString, CharSequence newString)：
+
+ 将所有出现的老字符串替换成为新的字符串，返回替换之后的结果新字符串。
+ 备注：CharSequence意思就是说可以接受字符串类型。
+
+例
+
+```java
+public static void main(String[] args) {
+   // 转换成为字符数组
+   char[] chars = "Hello".toCharArray();
+   System.out.println(chars[0]); // H
+   System.out.println(chars.length); // 5
+   System.out.println("==============");
+   // 转换成为字节数组
+   byte[] bytes = "abc".getBytes();
+   for (int i = 0; i < bytes.length; i++) {（可以用bytes.fori呼出）
+
+System.out.println(bytes[i]); }
+ System.out.println("==============");
+   // 字符串的内容替换
+   String str1 = "How do you do?";
+   String str2 = str1.replace("o", "*");
+   System.out.println(str1); // How do you do?
+   System.out.println(str2); // H*w d* y*u d*?
+   System.out.println("==============");
+   String lang1 = "会不会玩儿呀！你大爷的！你大爷的！你大爷的！！！";
+   String lang2 = lang1.replace("你大爷的", "****");
+   System.out.println(lang2); // 会不会玩儿呀！****！****！****！！！}
+```
+
+#### 8.8分割字符串方法
+
+>  public String[] split(String regex)：按照参数的规则，将字符串切分成为若干部分。
+
+-  注意事项：
+   split方法的参数其实是一个“正则表达式”。
+
+- 注意：如果按照英文句点“.”进行切分，必须写"\\."（两个反斜杠）
+
+例
+
+```java
+public static void main(String[] args) {
+   String str1 = "aaa,bbb,ccc";
+   String[] array1 = str1.split(",");
+   for (int i = 0; i < array1.length; i++) {
+     System.out.println(array1[i]);}
+  System.out.println("===============");
+   String str2 = "aaa bbb ccc";
+   String[] array2 = str2.split(" ");
+   for (int i = 0; i < array2.length; i++) {
+     System.out.println(array2[i]); }
+   System.out.println("===============");
+
+  String str3 = "XXX.YYY.ZZZ";
+   String[] array3 = str3.split("\\.");
+
+（若仅仅用英文句点“.”则不会显示任何东西）
+
+双反斜杠[\\为](file://为) 化特殊为普通
+   System.out.println(array3.length); // 0
+   for (int i = 0; i < array3.length; i++) {
+   System.out.println(array3[i]);
+```
+
+#### 8.9Exercise
+
+One. 
+
+> 题目：
+
+ 定义一个方法，把数组{1,2,3}按照指定格式拼接成一个字符串。格式参照如下：[word1#word2#word3]。
+ 分析：
+ \1. 首先准备一个int[]数组，内容是：1、2、3
+ \2. 定义一个方法，用来将数组变成字符串
+ 三要素
+ 返回值类型：String
+ 方法名称：fromArrayToString
+ 参数列表：int[]
+ \3. 格式：[word1#word2#word3]
+ 用到：for循环、字符串拼接、每个数组元素之前都有一个word字样、分隔使用的是#、区分一下是不是最后一个
+ \4. 调用方法，得到返回值，并打印结果字符串
+
+```java
+ public class Demo06StringPractise {
+ public static void main(String[] args) {
+ int[] array = {1, 2, 3, 4};
+ String result = fromArrayToString(array);
+ System.out.println(result); }
+ public static String fromArrayToString(int[] array) {String str = "[";
+ for (int i = 0; i < array.length; i++) {
+ if (i == array.length - 1) {
+ str += "word" + array[i] + "]";} else {
+ str += "word" + array[i] + "#";}}
+
+return str;}
+```
+
+Two. 
+
+> 题目：
+
+ 键盘输入一个字符串，并且统计其中各种字符出现的次数。
+ 种类有：大写字母、小写字母、数字、其他
+ 思路：
+ \1. 既然用到键盘输入，肯定是Scanner
+ \2. 键盘输入的是字符串，那么：String str = sc.next();
+ \3. 定义四个变量，分别代表四种字符各自的出现次数。
+ \4. 需要对字符串一个字、一个字检查，String-->char[]，方法就是toCharArray()
+ \5. 遍历char[]字符数组，对当前字符的种类进行判断，并且用四个变量进行++动作。
+ \6. 打印输出四个变量，分别代表四种字符出现次数。
+
+```java
+ public class Demo07StringCount {
+ public static void main(String[] args) {
+ Scanner sc = new Scanner(System.in);
+ System.out.println("请输入一个字符串：");
+ String input = sc.next(); // 获取键盘输入的一个字符串
+ int countUpper = 0; // 大写字母
+ int countLower = 0; // 小写字母
+ int countNumber = 0; // 数字
+ int countOther = 0; // 其他字符
+ char[] charArray = input.toCharArray();
+ for (int i = 0; i < charArray.length; i++) {
+ char ch = charArray[i]; // 当前单个字符
+ if ('A' <= ch && ch <= 'Z') {countUpper++;}
+
+else if ('a' <= ch && ch <= 'z') {countLower++;}
+
+else if ('0' <= ch && ch <= '9') {countNumber++;} else {countOther++;}}
+ System.out.println("大写字母有：" + countUpper);
+ System.out.println("小写字母有：" + countLower);
+ System.out.println("数字有：" + countNumber);
+ System.out.println("其他字符有：" + countOther);
+```
+
+#### 8.10StringBuilder
+
+StringBuilder是一个可变的字符串类，我们可以把它看成是一个容器
+
+作用：提高字符串的操作效率
+
+> StringBuilder构造方法:
+
+1.Public StringBuilder() 创建一个空白可变字符串对象，不含有任何内容
+
+2.Public StringBuilder(String str)根据字符串的内容，来创建可变字符串对象
+
+> StringBuilder的常用方法：
+
+1. Public StringBuilder append（类型）添加数据，并返回对象本身
+
+例：
+
+```java
+StringBuilde sb=new StringBuilde（）；
+
+Sb.append（123）；
+
+sout（sb）；//123
+```
+
+链式编程：如果一个方法返回的是对象类型，对象就可以继续向下调用方法
+
+```java
+Sb.append(“red”).append(“blue”).append(“green”);
+```
+
+   2.Public StringBuilder reverse（）返回相反的字符序列
+
+   3.Public int length（）返回长度（字符出现的个数）
+
+   4.Public String toString（） 通过toString（）就可以实现把StringBuilder转换为String 
+
+#### 8.11StringBuilder和String的区别
+
+> String：内容不可改变
+
+> Stringbuilder：内容是可以改变的   
+
+案例：拼接字符串
+
+```java
+public class exe01 {
+   public static void main(String[] args) {
+ int[] arr = {1, 2, 3};
+ String s = arrayToString(arr);
+ System.out.println("s:" + s); }
+   public static String arrayToString(int[] arr){
+ //在方法中用 StringBuilder 按照要求进行拼接，并把结果转成 String 返回
+ StringBuilder sb = new StringBuilder();
+ sb.append("[");
+ for(int i=0; i<arr.length; i++) {
+
+if(i == arr.length-1) {sb.append(arr[i]);} else
+
+{sb.append(arr[i]).append(", ");}}
+ sb.append("]");
+ String s = sb.toString();
+ return s;}}
+```
+
+ 
+
+#### 8.12静态static关键字
+
+ ![image-20210402004829018](JavaEE.assets/image-20210402004829018.png)
+
+使用static修饰成员方法，那么这就成为了静态方法。静态方法不属于对象，而是属于类的。
+ 如果没有static关键字，那么必须首先创建对象，然后通过对象才能使用它。
+ 如果有了static关键字，那么不需要创建对象，直接就能通过类名称来使用它。
+ 无论是成员变量，还是成员方法。如果有了static，都推荐使用类名称进行调用。
+
+>  静态变量：类名称.静态变量
+>  静态方法：类名称.静态方法()
+
+-  注意事项：
+   \1. 静态不能直接访问非静态
+   原因：因为在内存当中是【先】有的静态内容，【后】有的非静态内容。
+   “先人不知道后人，但是后人知道先人。”
+   \2. 静态方法当中不能用this。
+   原因：this代表当前对象，通过谁调用的方法，谁就是当前对象。
+
+例
+
+```java
+（Myclass.java）
+public class MyClass {
+   int num; // 成员变量
+   static int numStatic; // 静态变量
+   // 成员方法
+   public void method() {
+     System.out.println("这是一个成员方法。");
+     // 成员方法可以访问成员变量
+     System.out.println(num);
+     // 成员方法可以访问静态变量
+     System.out.println(numStatic)；}
+   // 静态方法
+   public static void methodStatic() {
+     System.out.println("这是一个静态方法。");
+     // 静态方法可以访问静态变量
+     System.out.println(numStatic);
+     // 静态不能直接访问非静态【重点】
+ //    System.out.println(num); // 错误写法！
+     // 静态方法中不能使用this关键字。
+ //    System.out.println(this); // 错误写法！ }
+```
+
+```java
+(Demo02StaticMethod.java)
+public class Demo02StaticMethod {
+   public static void main(String[] args) {
+     MyClass obj = new MyClass(); // 首先创建对象
+     // 然后才能使用没有static关键字的内容
+     obj.method();
+     // 对于静态方法来说，可以通过对象名进行调用，也可以直接通过类名称来调用。
+     obj.methodStatic(); // 正确，不推荐，这种写法在编译之后也会被javac翻译成为“类名称.静态方法名”
+     MyClass.methodStatic(); // 正确，推荐
+     //对于本类当中的静态方法，可以省略类名称
+     myMethod();
+     Demo02StaticMethod.myMethod(); // 完全等效 }
+   public static void myMethod() {
+     System.out.println("自己的方法！");
+```
+
+​     
+
+####  8.13静态的内存图 
+
+静态代码块
+
+![image-20210402004818975](JavaEE.assets/image-20210402004818975.png)
+
+格式：
+
+```java
+ public class 类名称 {
+ static {静态代码块的内容}
+```
+
+ 特点：当第一次用到本类时，静态代码块执行唯一的一次。
+ 静态内容总是优先于非静态，所以静态代码块比构造方法先执行。
+ 静态代码块的典型用途：
+ 用来一次性地对静态成员变量进行赋值。
+
+```java
+（person.java）
+
+ublic class Person {
+ static {
+ System.out.println("静态代码块执行！");}
+
+public Person() {
+ System.out.println("构造方法执行！")}
+
+ 
+
+(demo04static.java)
+
+public class Demo04Static {
+ public static void main(String[] args) {
+ Person one = new Person();
+ Person two = new Person();
+    结果//静态代码块执行！
+
+//构造方法执行！
+
+//构造方法执行！
+```
+
+
+
+
+
+### Demo09_继承、super、this、抽象类
+
+#### 9.1继承
+
+> 继承是多态的前提，如果没有继承，就没有多态
+
+继承主要解决的问题就是：共性抽取
+
+继承关系当中的特点：
+
+- 子类可以拥有父类的“内容”
+
+- 子类还可以拥有自己专有的内容
+
+定义父类的格式：（一个普通的类定义）
+
+```java
+ public class 父类名称 {// ...}
+ 定义子类的格式：
+ public class 子类名称 extends 父类名称 {// ...}
+```
+
+#### 9.2在父子类的继承关系当中，如果成员变量重名，则创建子类对象时，访问有两种方式：
+
+ 直接通过子类对象访问成员变量：等号左边是谁，就优先用谁，没有则向上找。
+ 间接通过成员方法访问成员变量：该方法属于谁，就优先用谁，没有则向上找。
+
+例
+
+```java
+(Zi.java)
+
+public class Zi extends Fu {
+ int numZi = 20;
+ int num = 200;
+ public void methodZi() {
+ // 因为本类当中有num，所以这里用的是本类的num
+ System.out.println(num);
+
+(Fu.java)
+
+public class Fu {
+ int numFu = 10;
+ int num = 100;
+ public void methodFu() {
+ // 使用的是本类当中的，不会向下找子类的
+ System.out.println(num);
+
+（Demo01ExtendsField.java）
+
+public class Demo01ExtendsField {
+
+ public static void main(String[] args) {
+ Fu fu = new Fu(); // 创建父类对象
+ System.out.println(fu.numFu); // 只能使用父类的东西，没有任何子类内容
+ System.out.println("===========");
+ Zi zi = new Zi();
+ System.out.println(zi.numFu); // 10
+ System.out.println(zi.numZi); // 20
+ System.out.println("===========");
+ // 等号左边是谁，就优先用谁
+ System.out.println(zi.num); // 优先子类，200
+ //System.out.println(zi.abc); // 到处都没有，编译报错！
+ System.out.println("===========");
+ // 这个方法是子类的，优先用子类的，没有再向上找
+ zi.methodZi(); // 200
+ // 这个方法是在父类当中定义的，
+ zi.methodFu(); // 100}
+```
+
+●局部变量，本类的成员变量，父类的成员变量3者重名解决方法：
+
+> 局部变量：     直接写成员变量名
+>  本类的成员变量：  this.成员变量名
+>  父类的成员变量：  super.成员变量名
+
+例
+
+```java
+DEMO
+
+public class Demo01ExtendsField {
+ public static void main(String[] args) {
+ Zi zi = new Zi();
+ zi.method();}
+
+FU
+
+public class Fu {
+ int num = 10;
+
+ZI
+
+public class Zi extends Fu {
+ int num = 20;
+ public void method() {
+ int num = 30;
+ System.out.println(num); // 30，局部变量
+ System.out.println(this.num); // 20，本类的成员变量
+ System.out.println(super.num); // 10，父类的成员变量
+```
+
+#### 9.3在父子类的继承关系当中，创建子类对象，访问成员方法的规则
+
+创建的对象是谁，就优先用谁，如果没有则向上找。
+
+-  注意事项：
+   无论是成员方法还是成员变量，如果没有都是向上找父类，绝对不会向下找子类的。
+
+-  重写（Override）
+   概念：在继承关系当中，方法的名称一样，参数列表也一样。
+
+>  重写（Override）：方法的名称一样，参数列表【也一样】。覆盖、覆写。
+>  重载（Overload）：方法的名称一样，参数列表【不一样】。
+
+ 方法的覆盖重写特点：创建的是子类对象，则优先用子类方法。
+
+#### 9.4方法覆盖重写
+
+- 注意事项：
+   \1. 必须保证父子类之间方法的名称相同，参数列表也相同。
+   @Override：写在方法前面，用来检测是不是有效的正确覆盖重写。
+   这个注解就算不写，只要满足要求，也是正确的方法覆盖重写。
+   \2. 子类方法的返回值必须【小于等于】父类方法的返回值范围。
+   扩展提示：java.lang.Object类是所有类的公共最高父类（祖宗类），java.lang.String就是Object的子类
+   \3. 子类方法的权限必须【大于等于】父类方法的权限修饰符。
+   扩展提示：public > protected > (default) > private
+   备注：(default)不是关键字default，而是什么都不写，留空。
+
+覆盖重写的方法
+
+例
+
+```java
+（子类）// 定义一个新手机，使用老手机作为父类
+ public class NewPhone extends Phone {
+ @Override
+ public void show() {
+ super.show(); // 把父类的show方法拿过来重复利用
+ // 自己子类再来添加更多内容
+ System.out.println("显示姓名");
+ System.out.println("显示头像");
+
+（父类）// 本来的老款手机
+ public class Phone {
+ public void call() {
+ System.out.println("打电话");}
+ public void send() {
+ System.out.println("发短信"); }
+ public void show() {
+ System.out.println("显示号码");}}
+
+public class Demo01Phone {
+ public static void main(String[] args) {
+ NewPhone newPhone = new NewPhone();
+ newPhone.call();
+ newPhone.send();
+ newPhone.show();
+```
+
+
+
+#### 9.5继承关系中，父子类构造方法的访问特点
+
+ \1. 子类构造方法当中有一个默认隐含的“super()”调用，所以一定是先调用的父类构造，后执行的子类构造。
+ \2. 子类构造可以通过super关键字来调用父类重载构造。
+ \3. super的父类构造调用，必须是子类构造方法的第一个语句。不能一个子类构造调用多次super构造。
+ 总结：
+ 子类必须调用父类构造方法，不写则赠送super()；写了则用写的指定的super调用，super只能有一个，还必须是第一个。
+
+例
+
+```java
+（父类）public class Fu {
+ public Fu() {
+ System.out.println("父类无参构造");}
+ public Fu(int num) {
+ System.out.println("父类有参构造！"); }
+
+（子类）
+
+public class Zi extends Fu {
+ public Zi() {
+ super(); // 在调用父类无参构造方法
+ //super(20); // 在调用父类重载的构造方法
+ System.out.println("子类构造方法！");}
+ public void method() {
+ //super(); // 错误写法！只有子类构造方法，才能调用父类构造方法。
+
+（main方法）
+
+public class Demo01Constructor {
+ public static void main(String[] args) {
+ Zi zi = new Zi();}
+```
+
+#### 9.6super关键字的用法
+
+ \1. 在子类的成员方法中，访问父类的成员变量。
+ \2. 在子类的成员方法中，访问父类的成员方法。
+ \3. 在子类的构造方法中，访问父类的构造方法。
+
+例
+
+```java
+（FU）
+
+public class Fu {
+ int num=10;
+ public void method(){
+ System.out.println("父类方法执行");}}
+
+(ZI)
+
+public class Zi extends Fu {
+ public Zi() {
+ super();}
+ int num = 20;
+ public void method() {
+ super.method();
+ System.out.println(num);
+ System.out.println(super.num);}
+```
+
+#### 9.7this关键字用来访问本类内容用法
+
+ \1. 在本类的成员方法中，访问本类的成员变量。
+ \2. 在本类的成员方法中，访问本类的另一个成员方法。
+ \3. 在本类的构造方法中，访问本类的另一个构造方法。
+ 在第三种用法当中要注意：
+ A. this(...)调用也必须是构造方法的第一个语句，唯一一个。
+ B. super和this两种构造调用，不能同时使用。
+
+例
+
+```java
+（fu.java）
+
+public class Fu {
+ int num = 30;
+
+（zi.java）
+
+public class Zi extends Fu {
+ int num = 20;
+ public Zi() {
+ //super(); // 这一行不再赠送
+ this(123); // 本类的无参构造，调用本类的有参构造
+ //this(1, 2); // 错误写法
+ public Zi(int n) {
+ this(1, 2);}
+ public Zi(int n, int m) {}
+ public void showNum() {
+ int num = 10;
+ System.out.println(num); // 局部变量
+ System.out.println(this.num); // 本类中的成员变量
+ System.out.println(super.num); // 父类中的成员变量}
+ public void methodA() {
+
+System.out.println("AAA");}
+ public void methodB() {
+ this.methodA();
+ System.out.println("BBB");}
+```
+
+#### 9.8super与this的内存图
+
+  ![image-20210402005125891](JavaEE.assets/image-20210402005125891.png)
+
+#### 9.9继承的三个特点
+
+ ![image-20210402005131834](JavaEE.assets/image-20210402005131834.png)
+
+#### 9.10抽象的概念
+
+ ![image-20210402005137195](JavaEE.assets/image-20210402005137195.png)
+
+如果一个方法不确定如何进行{}方法体实现，那么就应该是一个抽象方法
+
+#### 9.11抽象方法的使用
+
+> 抽象方法：就是加上abstract关键字，然后去掉大括号，直接分号结束。
+
+>  抽象类：抽象方法所在的类，必须是抽象类才行。在class之前写上abstract即可。
+
+-  使用抽象类和抽象方法
+   \1. 不能直接创建new抽象类对象。
+   \2. 必须用一个子类来继承抽象父类。
+   \3. 子类必须覆盖重写抽象父类当中所有的抽象方法。
+   覆盖重写（实现）：子类去掉抽象方法的abstract关键字，然后补上方法体大括号。
+   \4. 创建子类对象进行使用。
+
+例：
+
+```java
+（抽象父类animal）
+ public abstract class Animal {
+ // 这是一个抽象方法，代表吃东西，但是具体吃什么（大括号的内容）不确定。
+ public abstract void eat();
+ // 这是普通的成员方法
+ //public void normalMethod() {
+ //}
+
+（子类cat）
+
+public class Cat extends Animal {
+ @Override
+ public void eat() {
+ System.out.println("猫吃鱼");}
+
+（main方法）
+
+public class DemoMain {
+ public static void main(String[] args) {
+ //Animal animal = new Animal(); // 错误写法！不能直接创建抽象类对象
+ Cat cat = new Cat();
+ cat.eat();
+```
+
+#### 9.12抽象类注意事项
+
+\1. 抽象类不能创建对象，如果创建，编译无法通过而报错。只能创建其非抽象子类的对象。
+
+理解：假设创建了抽象类的对象，调用抽象的方法，而抽象方法没有具体的方法体，没有义。
+
+\2. 抽象类中，可以有构造方法，是供子类创建对象时，初始化父类成员使用的。
+
+理解：子类的构造方法中，有默认的super()，需要访问父类构造方法。
+
+3.抽象类中，不一定包含抽象方法，但是有抽象方法的类必定是抽象类。
+
+理解：未包含抽象方法的抽象类，目的就是不想让调用者创建该类对象，通常用于某些特殊的类结构设计。
+
+\4. 抽象类的子类，必须重写抽象父类中所有的抽象方法，否则，编译无法通过而报错。除非该子类也是抽象类。
+
+理解：假设不重写所有抽象方法，则类中可能包含抽象方法。那么创建对象后，调用抽象的方法，没有意义。
+
+例
+
+```java
+（Animal）
+
+public abstract class Animal {
+ public abstract void eat();
+ public abstract void sleep();
+
+（dog）
+
+public abstract class Dog extends Animal {
+ @Override
+ public void eat() {
+ System.out.println("狗吃骨头");}
+ // public abstract void sleep();
+
+（Dog2Ha）
+
+public class Dog2Ha extends Dog {
+ @Override
+ public void sleep() {
+ System.out.println("嘿嘿嘿……");}
+
+（DogGolden）
+
+public class DogGolden extends Dog {
+ @Override
+ public void sleep() {System.out.println("呼呼呼……");}}
+
+（main）
+
+public class DemoMain public static void main(String[] args) {
+ //Animal animal = new Animal(); // 错误！
+ //Dog dog = new Dog(); // 错误，这也是抽象类
+ Dog2Ha ha = new Dog2Ha(); // 这是普通类，可以直接new对象。
+ ha.eat();
+ ha.sleep();
+ System.out.println("==========");
+ DogGolden golden = new DogGolden();
+ golden.eat();
+ golden.sleep();
+```
+
+ 
+
+ 
+
+
+
+●练习：发红包案例
+
+```java
+/////////////////////////////////////////////////////////User.java
+
+public class User {
+   private String name; // 姓名
+   private int money; // 余额，也就是当前用户拥有的钱数
+   public User() {
+   }
+   public User(String name, int money) {
+     this.name = name;
+     this.money = money;
+   }
+   // 展示一下当前用户有多少钱
+   public void show() {
+     System.out.println("我叫：" + name + "，我有多少钱：" + money);
+   }
+   public String getName() {
+     return name;
+   }
+   public void setName(String name) {
+     this.name = name;
+   }
+   public int getMoney() {
+     return money;
+   }
+   public void setMoney(int money) {
+     this.money = money;
+   }
+
+/////////////////////////////////////////////////////////////Manager.java             
+
+ public class Manager extends User {
+
+   public Manager() {
+   }
+   public Manager(String name, int money) {
+     super(name, money);
+   }
+   public ArrayList<Integer> send(int totalMoney, int count) {
+     // 首先需要一个集合，用来存储若干个红包的金额
+     ArrayList<Integer> redList = new ArrayList<>();
+     // 首先看一下群主自己有多少钱
+     int leftMoney = super.getMoney(); // 群主当前余额
+     if (totalMoney > leftMoney) {
+       System.out.println("余额不足");
+       return redList; // 返回空集合
+     }
+     // 扣钱，其实就是重新设置余额
+     super.setMoney(leftMoney - totalMoney);
+     // 发红包需要平均拆分成为count份
+     int avg = totalMoney / count;
+     int mod = totalMoney % count; // 余数，也就是甩下的零头
+     // 除不开的零头，包在最后一个红包当中
+     // 下面把红包一个一个放到集合当中
+     for (int i = 0; i < count - 1; i++) {
+       redList.add(avg);
+     }
+     // 最后一个红包
+     int last = avg + mod;
+     redList.add(last);
+     return redList;
+
+////////////////////////////////////////////////////////////Member.java
+
+public class Member extends User {
+   public Member() {
+   }
+   public Member(String name, int money) {
+     super(name, money);
+   }
+   public void receive(ArrayList<Integer> list) {
+     // 从多个红包当中随便抽取一个，给我自己。
+     // 随机获取一个集合当中的索引编号
+     int index = new Random().nextInt(list.size());
+     // 根据索引，从集合当中删除，并且得到被删除的红包，给我自己
+     int delta = list.remove(index);
+     // 当前成员自己本来有多少钱：
+     int money = super.getMoney();
+     // 加法，并且重新设置回去
+     super.setMoney(money + delta);
+
+////////////////////////////////////////////////////////////mainRedpacket.java
+ public class MainRedPacket {
+
+    public static void main(String[] args) {
+        Manager manager = new Manager("群主", 100);
+
+        Member one = new Member("成员A", 0);
+        Member two = new Member("成员B", 0);
+        Member three = new Member("成员C", 0);
+        manager.show(); // 100
+        one.show(); // 0
+        two.show(); // 0
+        three.show(); // 0
+        System.out.println("===============");
+        // 群主总共发20块钱，分成3个红包
+        ArrayList<Integer> redList = manager.send(20, 3);
+        // 三个普通成员收红包
+        one.receive(redList);
+        two.receive(redList);
+        three.receive(redList);
+        manager.show(); // 100-20=80
+        // 6、6、8，随机分给三个人
+        one.show();
+        two.show();
+        three.show();
+
+ Member one = new Member("成员A", 0);
+ Member two = new Member("成员B", 0);
+ Member three = new Member("成员C", 0);
+ manager.show(); // 100
+ one.show(); // 0
+ two.show(); // 0
+ three.show(); // 0
+ System.out.println("===============");
+ // 群主总共发20块钱，分成3个红包
+ ArrayList<Integer> redList = manager.send(20, 3);
+ // 三个普通成员收红包
+ one.receive(redList);
+ two.receive(redList);
+ three.receive(redList);
+ manager.show(); // 100-20=80
+ // 6、6、8，随机分给三个人
+ one.show();
+ two.show();
+ three.show();
+```
+
+
+
+
+
+### Demo10_接口、多态
+
+#### 10.1接口
+
+接口就是多个类的公共规范。
+接口是一种引用数据类型，最重要的内容就是其中的：抽象方法。
+如何定义一个接口的格式：
+
+```java
+public interface 接口名称 {
+    // 接口内容
+```
+
+备注：换成了关键字interface之后，编译生成的字节码文件仍然是：.java --> .class。接口中可以包含的内容有：
+
+1. 常量
+
+2. 抽象方法 
+
+3. 默认方法
+
+4. 静态方法
+
+5. 私有方法
+
+   - 接口使用步骤：
+
+   1.接口不能直接使用，必须有一个“实现类”来“实现”该接口。
+   格式：
+
+   ```
+   public class 实现类名称 implements 接口名称 {
+   // ... 
+   ```
+
+   2.接口的实现类必须覆盖重写（实现）接口中所有的抽象方法。
+   实现：去掉abstract关键字，加上方法体大括号。
+
+   3.创建实现类的对象，进行使用。
+
+   - 注意事项：
+     如果实现类并没有覆盖重写接口中所有的抽象方法，那么这个实现类自己就必须是抽象类。
+     ●在任何版本的Java中，接口都能定义抽象方法。
+     格式：
+     public abstract 返回值类型 方法名称(参数列表);
+
+   - 注意事项:  
+
+   ​       接口当中的抽象方法，修饰符必须是两个固定的关键字：public abstract
+
+   ​       这两个关键字修饰符，可以选择性地省略。
+
+   ​       方法的三要素，可以随意定义。
+
+   例
+
+   ```java
+   terfaceAbstract.java
+   public interface MyInterfaceAbstract {
+    // 这是一个抽象方法
+    public abstract void methodAbs1();
+    // 这也是抽象方法
+    abstract void methodAbs2();
+    // 这也是抽象方法
+    public void methodAbs3();
+    // 这也是抽象方法
+    void methodAbs4();
+   MyInterfaceAbstractImpl。Java
+   public class MyInterfaceAbstractImpl implements MyInterfaceAbstract {
+    @Override
+    public void methodAbs1() {
+   System.out.println("这是第一个方法！");}
+   @Override
+   public void methodAbs2() {
+   System.out.println("这是第二个方法！");}
+    @Override
+    public void methodAbs3() {
+   System.out.println("这是第三个方法！")}
+    @Override
+    public void methodAbs4() {
+   System.out.println("这是第四个方法！"); }
+   Demo01Interface。Java
+   public class Demo01Interface {
+   public static void main(String[] args) {
+   // 错误写法！不能直接new接口对象使用。
+   //  MyInterfaceAbstract inter = new MyInterfaceAbstract();
+   // 创建实现类的对象使用
+   MyInterfaceAbstractImpl impl = new MyInterfaceAbstractImpl();
+   impl.methodAbs1();
+   impl.methodAbs2();
+   ```
+
+   #### 
+
+#### 10.2默认方法
+
+从Java 8开始，接口里允许定义默认方法。
+格式：
+
+```
+public default 返回值类型 方法名称(参数列表){方法体}
+```
+
+备注：接口当中的默认方法，可以解决接口升级的问题。
+例：
+
+```java
+(MyInterfaceDefault.java)
+public interface MyInterfaceDefault {
+ // 抽象方法
+ public abstract void methodAbs();
+ // 新添加了一个抽象方法
+//    public abstract void methodAbs2();
+ // 新添加的方法，改成默认方法
+ public default void methodDefault() {
+     System.out.println("这是新添加的默认方法");}
+(MyInterfaceDefaultA.java)
+public class MyInterfaceDefaultA implements MyInterfaceDefault {
+ @Override
+public void methodAbs() {
+System.out.println("实现了抽象方法，AAA");}
+(MyInterfaceDefaultB.java)
+public class MyInterfaceDefaultB implements MyInterfaceDefault {
+ @Override
+ public void methodAbs() {
+ System.out.println("实现了抽象方法，BBB");}
+ @Override
+ public void methodDefault() {
+ System.out.println("实现类B覆盖重写了接口的默认方法");
+(Demo02Interface.java)
+public class Demo02Interface {
+ public static void main(String[] args) {
+// 创建了实现类对象
+MyInterfaceDefaultA a = new MyInterfaceDefaultA();
+ a.methodAbs(); // 调用抽象方法，实际运行的是右侧实现类。
+// 调用默认方法，如果实现类当中没有，会向上找接口
+a.methodDefault(); // 这是新添加的默认方法
+System.out.println("==========");
+ MyInterfaceDefaultB b = new MyInterfaceDefaultB();
+b.methodAbs();
+ b.methodDefault(); // 实现类B覆盖重写了接口的默认方法
+```
+
+#### 10.3接口的静态方法
+
+从Java 8开始，接口当中允许定义静态方法。
+格式：
+
+```
+public static 返回值类型 方法名称(参数列表) {方法体}
+```
+
+提示：就是将abstract或者default换成static即可，带上方法体。
+注意事项：不能通过接口实现类的对象来调用接口当中的静态方法。
+正确用法：通过接口名称，直接调用其中的静态方法。
+格式：
+
+```
+接口名称.静态方法名(参数);
+```
+
+例：
+
+```java
+ // 创建了实现类对象
+MyInterfaceStaticImpl impl = new MyInterfaceStaticImpl();
+// 错误写法！
+//  impl.methodStatic();
+// 直接通过接口名称调用静态方法
+MyInterfaceStatic.methodStatic();
+```
+
+#### 10.4接口的私有方法
+
+问题描述：
+我们需要抽取一个共有方法，用来解决两个默认方法之间重复代码的问题。
+但是这个共有方法不应该让实现类使用，应该是私有化的。
+解决方案：
+从Java 9开始，接口当中允许定义私有方法。
+
+- 1.普通私有方法，解决多个默认方法之间重复代码问题
+
+  格式：
+
+  ```
+  private 返回值类型 方法名称(参数列表) {方法体}
+  ```
+
+  
+
+- 2.静态私有方法，解决多个静态方法之间重复代码问题
+
+格式：
+
+```
+private static 返回值类型 方法名称(参数列表) {方法体}
+```
+
+例
+
+```java
+public interface Myinterfaceprivate {
+ //    public static void methodstatic(){
+//        System.out.println("jintai");
+//        methodpri2(); }
+ public default void methoddefault1() {
+     System.out.println("moren ");
+     methodpri();}
+ public default void methoddefault2() {
+     System.out.println("moren ");
+     methodpri(); }
+ private void methodpri() {
+     System.out.println("aaa");
+     System.out.println("bbb");
+     System.out.println("ccc");}
+//    private static void  methodpri2(){
+//        System.out.println("jintaisiyou"); }}
+（impl）
+public class impl {
+ public static void main(String[] args) {
+//   Myinterfaceprivate.methodstatic();
+MyinetfaceprivateA m=new MyinetfaceprivateA();
+ m.methoddefault1();
+ m.methoddefault2(); }}
+```
+
+#### 10.5接口的常量定义和使用
+
+接口中也可以定义成员变量，但是必须使用public static final三个关键词进行修饰，从效果上看，这其实就是接口的【常量】
+格式：
+
+```
+Public static final 数据类型 常量名称=数据值
+```
+
+一旦使用final关键词进行修饰，说明不可改变
+注意：
+1.接口中的常量，可以省略public static final
+2.接口中的常量，必须进行赋值，不能不赋值
+3.接口中常量的名称，使用完全大写的字母，用下划线进行分割
+
+#### 10.6接口小结
+
+在Java 9+版本中，接口的内容可以有：
+
+1. 成员变量其实是常量，格式：
+   [public] [static] [final] 数据类型 常量名称 = 数据值;
+   注意：
+   ①.常量必须进行赋值，而且一旦赋值不能改变。
+   ②．常量名称完全大写，用下划线进行分隔。
+
+2. 接口中最重要的就是抽象方法，格式：
+   [public] [abstract] 返回值类型 方法名称(参数列表);
+   注意：实现类必须覆盖重写接口所有的抽象方法，除非实现类是抽象类。
+
+3. 从Java 8开始，接口里允许定义默认方法，格式：
+   [public] default 返回值类型 方法名称(参数列表) { 方法体 }
+   注意：默认方法也可以被覆盖重写
+
+4. 从Java 8开始，接口里允许定义静态方法，格式：
+   [public] static 返回值类型 方法名称(参数列表) { 方法体 }
+   注意：应该通过接口名称进行调用，不能通过实现类对象调用接口静态方法
+
+5. 从Java 9开始，接口里允许定义私有方法，格式：
+   普通私有方法：private 返回值类型 方法名称(参数列表) { 方法体 }
+   静态私有方法：private static 返回值类型 方法名称(参数列表) { 方法体 }
+   注意：private的方法只有接口自己才能调用，不能被实现类或别人使用。
+   注意事项：
+
+   1.接口是没有静态代码块或者构造方法的
+
+   2.一个类的直接父类是唯一的，但是一个类可以同时实现多个接口
+   格式：public class MyinterfaceImpl implements MyinterfaceA，MyinerfaceB{//覆盖重写所有抽象代码}
+
+   3.如果实现类所实现的多个接口，存在重复的抽象方法，那么只需要覆盖重写一次即可
+
+   4.如果实现类没有覆盖重写所有接口中的所有抽象方法，那么实现类就必须是一个抽象类
+
+   5.如果实现类实现的多个接口中，存在重复的默认方法，那么实现类一定要对冲突的默认方法进行覆盖重写
+
+   6.一个类如果直接父类中的方法，和接口中的默认方法产生冲突，优先使用父类当中的默认方法
+
+#### 10.7接口直接的多继承
+
+1.类与类之间是单继承的。直接父类只有一个。
+
+2.类与接口之间是多实现的。一个类可以实现多个接口。
+
+3.接口与接口之间是多继承的。
+
+- 注意事项：
+
+1.多个父接口当中的抽象方法如果重复，没关系。
+
+2.多个父接口当中的默认方法如果重复，那么子接口必须进行默认方法的覆盖重写，【而且带着default关键字】。
+
+#### 10.8多态
+
+一个对象拥有多种形态，这就是多态性
+Extends继承或者implements实现，是多态性的前提
+
+#### 10.9多态的格式与使用
+
+代码中体现多态性，意思是：父类引用指向子类对象
+格式：
+
+```
+父类名称 对象名=new 子类名称（）；
+```
+
+
+或者：
+
+```
+接口名称 对象名=new 实现类名称（）；
+```
+
+例
+
+```
+（fu）
+public class Fu {
+public void method() {
+System.out.println("父类方法");}
+public void methodFu() {
+System.out.println("父类特有方法");}}
+（zi）
+public class Zi extends Fu {
+@Override
+public void method() {
+ System.out.println("子类方法");}}
+（demo）
+public class Demo01Multi {
+public static void main(String[] args) {
+// 使用多态的写法
+ // 左侧父类的引用，指向了右侧子类的对象
+ Fu obj = new Zi();
+ obj.method();
+ obj.methodFu(); }}
+```
+
+
+
+#### 10.10多态访问成员变量的两种方式
+
+1. 直接通过对象名称访问成员变量：看等号左边是谁，优先用谁，没有则向上找。
+
+2. 间接通过成员方法访问成员变量：看该方法属于谁，优先用谁，没有则向上找。
+   例
+
+   ```java
+   （fu）
+   public class Fu {
+   int num=10;
+   public void method(){
+    System.out.println(num);
+   System.out.println("fu"); }}
+   （zi）
+   public class Zi extends Fu{
+    int num=20;
+   public void method(){
+   System.out.println(num); }}
+   （demo）public class demo {
+    public static void main(String[] args) {
+   Fu obj=new Zi();
+   System.out.println(obj.num);
+    obj.method(); }}
+   ```
+
+   
+
+   #### 
+
+#### 10.11多态中成员方法的使用
+
+在多态的代码当中，成员方法的访问规则是：
+ 看new的是谁，就优先用谁，没有则向上找。
+口诀：编译看左边，运行看右边。
+对比：
+成员变量：编译看左边，运行还看左边。
+成员方法：编译看左边，运行看右边。
+例
+
+使用多态的好处
+
+```java
+public class Demo02MultiMethod {
+public static void main(String[] args) {
+Fu obj = new Zi(); // 多态
+obj.method(); // 父子都有，优先用子
+ obj.methodFu(); // 子类没有，父类有，向上找到父类
+
+ // 编译看左边，左边是Fu，Fu当中没有methodZi方法，所以编译报错。
+//obj.methodZi(); // 错误写法！ }}
+```
+
+
+
+#### 10.12对象的上下转型
+
+![image-20210402005700083](JavaEE.assets/image-20210402005700083.png)
+
+![image-20210402005655236](JavaEE.assets/image-20210402005655236.png)
+
+向上转型就是多态
+
+```
+格式：父类对象 对象名=new 子类对象（）;
+```
+
+向下转型就是还原
+
+```
+格式：子类对象 对象名=（子类名称）父类对象;
+```
+
+#### 10.13用instanceof关键字进行判断
+
+如何才能知道一个父类引用的对象，本来是什么子类？
+格式：
+对象 instanceof 类名称
+这将会得到一个boolean值结果，也就是判断前面的对象能不能当做后面类型的实例。
+例
+
+```java
+public class Demo02Instanceof {
+public static void main(String[] args) {
+ Animal animal = new Dog(); // 本来是一只狗
+animal.eat(); // 狗吃SHIT
+// 如果希望掉用子类特有方法，需要向下转型
+// 判断一下父类引用animal本来是不是Dog
+ if (animal instanceof Dog) {
+Dog dog = (Dog) animal;
+ dog.watchHouse(); }
+// 判断一下animal本来是不是Cat
+ if (animal instanceof Cat) {
+ Cat cat = (Cat) animal;
+ cat.catchMouse();}
+giveMeAPet(new Dog()); }
+ public static void giveMeAPet(Animal animal) {
+if (animal instanceof Dog) {
+Dog dog = (Dog) animal;
+ dog.watchHouse();}
+if (animal instanceof Cat) {
+ Cat cat = (Cat) animal;
+ cat.catchMouse();} }}
+```
+
+例 笔记本usb案例
+思路：
+
+例 笔记本usb案例
+思路：
+
+![image-20210402005646026](JavaEE.assets/image-20210402005646026.png)实现：
+
+```java
+（COMPUTER）
+public class Computer {
+public void powerOn() {
+System.out.println("笔记本电脑开机");}
+public void powerOff() {
+System.out.println("笔记本电脑关机");}
+// 使用USB设备的方法，使用接口作为方法的参数
+ public void useDevice(USB usb) {
+usb.open(); // 打开设备
+ if (usb instanceof Mouse) { // 一定要先判断
+Mouse mouse = (Mouse) usb; // 向下转型
+ mouse.click();} 
+else if (usb instanceof Keyboard) { // 先判断
+Keyboard keyboard = (Keyboard) usb; // 向下转型 keyboard.type();}
+usb.close(); // 关闭设备}}
+(USB)
+public interface USB {
+ public abstract void open(); // 打开设备
+public abstract void close(); // 关闭设备}
+(MOUSE)
+// 鼠标就是一个USB设备
+public class Mouse implements USB {
+ @Override
+public void open() {
+System.out.println("打开鼠标");}
+@Override
+public void close() {System.out.println("关闭鼠标");}
+public void click() {
+System.out.println("鼠标点击");}}
+(KEYBOARD)
+// 键盘就是一个USB设备
+public class Keyboard implements USB {
+@Override
+public void open() {
+System.out.println("打开键盘");}
+@Override
+public void close() {
+System.out.println("关闭键盘");}
+public void type() {
+System.out.println("键盘输入");}}
+(DEMO)
+public class DemoMain {
+public static void main(String[] args) {
+// 首先创建一个笔记本电脑
+ Computer computer = new Computer();
+computer.powerOn();
+// 准备一个鼠标，供电脑使用
+// Mouse mouse = new Mouse();
+ // 首先进行向上转型
+USB usbMouse = new Mouse(); // 多态写法
+// 参数是USB类型，我正好传递进去的就是USB鼠标
+computer.useDevice(usbMouse);
+// 创建一个USB键盘
+ Keyboard keyboard = new Keyboard(); // 没有使用多态写法
+ // 方法参数是USB类型，传递进去的是实现类对象
+ computer.useDevice(keyboard); // 正确写法！也发生了向上转型
+ // 使用子类对象，匿名对象，也可以
+// computer.useDevice(new Keyboard()); // 也是正确写法
+ computer.powerOff();
+```
+
+
+
+### Demo11_final、权限、内部类
+
+
+
+#### 11.1Final关键字
+
+Final关键字代表最终，不可改变的
+
+#### 11.2Final关键字的用法
+
+\1.   可以用来修饰一个类
+
+当final关键字用来修饰一个类的时候，格式：
+ public final class 类名称 { // ...}
+
+ 含义：当前这个类不能有任何的子类。（太监类）
+
+- 注意：一个类如果是final的，那么其中所有的成员方法都无法进行覆盖重写（因为没儿子。）
+
+\2.   可以用来修饰一个方法
+
+当final关键字用来修饰一个方法的时候，这个方法就是最终方法，也就是不能被覆盖重写。
+ 格式：
+
+修饰符 final 返回值类型 方法名称(参数列表) {// 方法体}
+
+-  注意事项：对于类、方法来说，abstract关键字和final关键字不能同时使用，因为矛盾。
+
+\3.   可以用来修饰一个局部变量
+
+```java
+public class Demo01Final {
+   public static void main(String[] args) {
+ int num1 = 10;
+ System.out.println(num1); // 10
+ num1 = 20;
+ System.out.println(num1); // 20
+ // 一旦使用final用来修饰局部变量，那么这个变量就不能进行更改。
+ // “一次赋值，终生不变”
+ final int num2 = 200;
+ System.out.println(num2); // 200
+ //    num2 = 250; // 错误写法！不能改变！
+ //    num2 = 200; // 错误写法！
+ // 正确写法！只要保证有唯一一次赋值即可
+ final int num3;
+ num3 = 30;
+ // 对于基本类型来说，不可变说的是变量当中的数据不可改变
+ // 对于引用类型来说，不可变说的是变量当中的地址值不可改变
+  Student stu1 = new Student("赵丽颖");
+ System.out.println(stu1);
+ System.out.println(stu1.getName()); // 赵丽颖
+ stu1 = new Student("霍建华");
+ System.out.println(stu1);
+ System.out.println(stu1.getName()); // 霍建华
+ System.out.println("===============");
+ final Student stu2 = new Student("高圆圆");
+ // 错误写法！final的引用类型变量，其中的地址不可改变
+ // stu2 = new Student("赵又廷");
+ System.out.println(stu2.getName()); // 高圆圆
+ stu2.setName("高圆圆圆圆圆圆");
+ System.out.println(stu2.getName()); // 高圆圆圆圆}}
+```
+
+\4.   可以用来修饰一个成员变量
+
+对于成员变量来说，如果使用final关键字修饰，那么这个变量也照样是不可变。
+ \1. 由于成员变量具有默认值，所以用了final之后必须手动赋值，不会再给默认值了。
+ \2. 对于final的成员变量，要么使用直接赋值，要么通过构造方法赋值。二者选其一。
+ \3. 必须保证类当中所有重载的构造方法，都最终会对final的成员变量进行赋值。
+
+```java
+public class Person {
+ private final String name*/\* = "**鹿晗**"\*/*;
+ public Person() {
+ name = "关晓彤";}
+ public Person(String name) {
+ this.name = name;}
+ public String getName() {
+ return name; }
+ *//  public void setName(String name) {
+ //  this.name = name;}*
+```
+
+#### 11.3四种权限修饰符
+
+Java中有四种权限修饰符：
+ public >  protected  >  (default)  >  private
+ 同一个类（我自己）   
+
+  YES        YES                  YES               YES
+ 同一个包（我邻居） 
+
+  YES         YES                  YES               NO
+ 不同包子类（我儿子） 
+
+  YES         YES                  NO                NO
+ 不同包非子类（陌生人） 
+
+  YES          NO                  NO                 NO
+
+- 注意事项：(default)并不是关键字“default”，而是根本不写。
+
+#### 11.4内部类
+
+如果一个事物的内部包含另一个事物，那么这就是一个类内部包含另一个类
+
+分类：
+
+\1.   成员内部类
+
+\2. 局部内部类（包含匿名内部类）
+
+成员内部类的定义格式：
+
+修饰符 class 外部类名称{修饰符 class 内部名称类{//…}//…}
+
+- 注意：内用外，随意访问;外用内，需要内部类对象。
+
+
+ 如何使用成员内部类
+
+\1. 间接方式：在外部类的方法中，使用内部类，然后main方法只是调用外部类的方法。
+
+\2. 直接方式：公式：外部类名称.内部类对象 对象名=new 外部类名称（）.new 内部类名称（）； 
+
+例
+
+```java
+public class Body {
+ public class Heart{
+  public void beat(){
+ System.*out*.println("跳动");}}
+ String name;
+ public void methodout(){
+ System.*out*.println("外部类方法！！");
+ Heart heart=new Heart();
+ heart.beat();}}
+
+public class demo {
+ public static void main(String[] args) {
+ Body bo=new Body();
+ bo.methodout();*
+\* Body.Heart heart=new Body().new Heart();
+ heart.beat();}}
+
+ 
+```
+
+#### 11.5内部类的同名变量访问
+
+如果出现了重名现象，那么格式是：外部类名称.this.外部类成员变量名
+
+例：
+
+```java
+public class Outer {
+ int num = 10; *//* *外部类的成员变量
+\* public class Inner */\*extends Object\*/* {
+ int num = 20; *//* *内部类的成员变量
+\* public void methodInner() {
+ int num = 30; *//* *内部类方法的局部变量
+\* System.*out*.println(num); *//* *局部变量，就近原则
+\* System.*out*.println(this.num); *//* *内部类的成员变量
+\* System.*out*.println(Outer.this.num); *//* *外部类的成员变量* }}}
+```
+
+#### 11.6局部内部类定义
+
+如果一个类是定义在一个方法内部的，那么这就是一个局部内部类。
+ “局部”：只有当前所属的方法才能使用它，出了这个方法外面就不能用了。
+ 定义格式：
+
+ 
+
+```java
+修饰符 class 外部类名称 {
+
+修饰符 返回值类型 外部类方法名称(参数列表) {
+ class 局部内部类名称 {// ...}}}
+
+class Outer {
+ public void methodOuter() {
+ class Inner { *//* *局部内部类
+\* int num = 10;
+ public void methodInner() {
+ System.*out*.println(num); *// 10*}}
+ Inner inner = new Inner();
+ inner.methodInner();}}
+
+public class DemoMain {
+ public static void main(String[] args) {
+ Outer obj = new Outer();
+ obj.methodOuter();}}
+```
+
+####  11.7小节类的权限修饰符
+
+ public > protected > (default) > private
+ 定义一个类的时候，权限修饰符规则：
+ \1. 外部类：public / (default)
+ \2. 成员内部类：public / protected / (default) / private
+ \3. 局部内部类：什么都不能写
+
+```java
+●局部内部类的final问题
+局部内部类，如果希望访问所在方法的局部变量，那么这个局部变量必须是【有效final的】。
+备注：从Java 8+开始，只要局部变量事实不变，那么final关键字可以省略。
+原因：
+1. new出来的对象在堆内存当中。
+2. 局部变量是跟着方法走的，在栈内存当中。
+3. 方法运行结束之后，立刻出栈，局部变量就会立刻消失。
+4. 但是new出来的对象会在堆当中持续存在，直到垃圾回收消失。
+例：
+public class MyOuter {
+public void methodOuter() {
+int num = 10; // 所在方法的局部变量
+class MyInner {
+public void methodInner() {
+System.out.println(num);}}}}
+●匿名内部类
+```
+
+如果接口的实现类（或者是父类的子类）只需要使用唯一的一次，
+ 那么这种情况下就可以省略掉该类的定义，而改为使用【匿名内部类】。
+ 匿名内部类的定义格式：
+ 接口名称 对象名 = new 接口名称() {**
+**   // 覆盖重写所有抽象方法};
+
+```java
+例：
+public interface Myinterface {
+ public abstract void method();}
+
+public class Demomain {
+ public static void main(String[] args) {
+ Myinterface inter=new Myinterface(){
+ @Override
+ public void method(){
+ System.*out*.println("匿名内部类方法执行");}};
+ inter.method();}}//匿名内部类方法执行
+```
+
+
+
+- 注意事项：
+   \1. 匿名内部类，在【创建对象】的时候，只能使用唯一一次。
+   如果希望多次创建对象，而且类的内容一样的话，那么就需要使用单独定义的实现类了。
+   \2. 匿名对象，在【调用方法】的时候，只能调用唯一一次。
+   如果希望同一个对象，调用多次方法，那么必须给对象起个名字。
+   \3. 匿名内部类是省略了【实现类/子类名称】，但是匿名对象是省略了【对象名称】
+   强调：匿名内部类和匿名对象不是一回事！！！
+
+```java
+例：
+public class DemoMain {
+ public static void main(String[] args) {
+ //MyInterface obj = new MyInterfaceImpl();
+ //obj.method();
+ // MyInterface some = new MyInterface(); // 错误写法！
+ // 使用匿名内部类，但不是匿名对象，对象名称就叫objA
+ MyInterface objA = new MyInterface() {
+ @Override
+ public void method1() {
+ System.out.println("匿名内部类实现了方法！111-A");}
+ @Override
+ public void method2() {
+ System.out.println("匿名内部类实现了方法！222-A");}};
+ objA.method1();
+ objA.method2();
+ System.out.println("=================");
+ // 使用了匿名内部类，而且省略了对象名称，也是匿名对象
+ new MyInterface() {
+ @Override
+ public void method1() {
+ System.out.println("匿名内部类实现了方法！111-B");}
+ @Override
+ public void method2() {
+ System.out.println("匿名内部类实现了方法！222-B");}
+ }.method1();
+ // 因为匿名对象无法调用第二次方法，所以需要再创建一个匿名内部类的匿名对象
+ new MyInterface() {
+ @Override
+ public void method1() {
+ System.out.println("匿名内部类实现了方法！111-B");}
+ @Override
+
+public void method2() {
+ System.out.println("匿名内部类实现了方法！222-B");}
+ }.method2();}}
+public class DemoMain {
+ public static void main(String[] args) {
+ //MyInterface obj = new MyInterfaceImpl();
+ //obj.method();
+ // MyInterface some = new MyInterface(); // 错误写法！
+ // 使用匿名内部类，但不是匿名对象，对象名称就叫objA
+ MyInterface objA = new MyInterface() {
+ @Override
+ public void method1() {
+ System.out.println("匿名内部类实现了方法！111-A");}
+ @Override
+ public void method2() {
+ System.out.println("匿名内部类实现了方法！222-A");}};
+ objA.method1();
+ objA.method2();
+ System.out.println("=================");
+ // 使用了匿名内部类，而且省略了对象名称，也是匿名对象
+ new MyInterface() {
+ @Override
+ public void method1() {
+ System.out.println("匿名内部类实现了方法！111-B");}
+ @Override
+ public void method2() {
+ System.out.println("匿名内部类实现了方法！222-B");}
+ }.method1();
+ // 因为匿名对象无法调用第二次方法，所以需要再创建一个匿名内部类的匿名对象
+ new MyInterface() {
+ @Override
+ public void method1() {
+ System.out.println("匿名内部类实现了方法！111-B");}
+ @Override
+
+public void method2() {
+ System.out.println("匿名内部类实现了方法！222-B");}
+ }.method2();}}
+```
+
+
+
+#### 11.8类作为成员变量类型
+
+例：
+
+```java
+（定义一个类）
+
+public class Weapon {
+   private String code; *//* *武器的代号
+\*   public Weapon() {}
+   public Weapon(String code) {
+ this.code = code;}
+   public String getCode() {
+     return code;}
+
+   public void setCode(String code) {
+     this.code = code;}}
+
+*//* *游戏当中的英雄角色类*
+
+（定义角色类）*
+\* public class Hero {
+   private String name; *//* *英雄的名字
+\*   private int age; *//* *英雄的年龄
+\*   private Weapon weapon; *//* *英雄的武器
+\*   public Hero() {}
+ public Hero(String name, int age, Weapon weapon){
+     this.name = name;
+     this.age = age;
+     this.weapon = weapon;}
+   public void attack() {
+ System.*out*.println("年龄为" + age + "的" + name + "用" + weapon.getCode() + "攻击敌方。");}
+   public String getName() {
+ return name;}
+   public void setName(String name) {
+     this.name = name }
+  public int getAge() {
+     return age;}
+   public void setAge(int age) {
+     this.age = age;}
+   public Weapon getWeapon() {
+     return weapon;}
+   public void setWeapon(Weapon weapon) {
+     this.weapon = weapon;}
+
+（Main方法）
+
+public class DemoMain {
+   public static void main(String[] args) {
+     *//* *创建一个英雄角色
+\*     Hero hero = new Hero();
+     *//* *为英雄起一个名字，并且设置年龄
+\*     hero.setName("盖伦");
+     hero.setAge(20)
+     *//* *创建一个武器对象
+\*     Weapon weapon = new Weapon("AK-47");
+     *//* *为英雄配备武器
+\*     hero.setWeapon(weapon);
+     *//* *年龄为**20**的盖伦用多兰剑攻击敌方。
+\*     hero.attack();}}
+```
+
+#### 11.9接口作为成员变量类型
+
+例：
+
+```java
+（创建skill接口）
+
+public interface Skill {
+   void use();}
+
+（创建Hero类）
+
+public class Hero {
+   private String name;
+   private Skill skill;
+   public String getName() {
+     return name;}
+   public void attack() {
+ System.out.println("我叫" + name + "，开始施放技能：");
+ skill.use(); // 调用接口中的抽象方法
+ System.out.println("施放技能完成。");}
+   public void setName(String name) {
+     this.name = name;}
+   public Skill getSkill() {
+  return skill;}
+   public void setSkill(Skill skill) {
+   this.skill = skill;}
+   public Hero(String name, Skill skill) {
+     this.name = name;
+     this.skill = skill;}
+   public Hero() {}}
+
+（Demomain方法）
+
+public class DEMOmain {
+   public static void main(String[] args) {
+     Hero hero=new Hero();
+     hero.setName("aixi");
+
+（方法1）（添加实现类skillimpl）
+
+{public class Skillimpl implements Skill{
+ Override
+ public void use() {
+ System.*out*.println("aaa");}}}
+ Skillimpl impl=new Skillimpl();
+ hero.setSkill(impl);
+
+（方法2）
+Skill skill=new Skill() {
+@Override
+public void use() {
+System.out.println("bbb");}};
+hero.setSkill(skill)
+（方法3）
+hero.setSkill(new Skill(){
+@Override
+public void use() {
+System.out.println("ccc");}});
+hero.attack();}}
+```
+
+11.10接口作为方法的参数和返回值
+例：
+
+```java
+public class DemoInterface {
+public static void main(String[] args) {
+// 左边是接口名称，右边是实现类名称，这就是多态写法
+ List<String> list = new ArrayList<>();
+List<String> result = addNames(list);
+for (int i = 0; i < result.size(); i++) {
+System.out.println(result.get(i));}}
+public static List<String> addNames(List<String> list) {
+list.add("迪丽热巴");
+list.add("古力娜扎");
+list.add("玛尔扎哈");
+list.add("沙扬娜拉");
+return list;}} 
+```
+
+●●●发红包案例  普通红包&手气红包
+
+●●●发红包案例  普通红包&手气红包
+
+场景说明：
+   红包发出去之后，所有人都有红包，大家抢完了之后，最后一个红包给群主自己。
+ 大多数代码都是现成的，我们需要做的就是填空题。
+ 我们自己要做的事情有：
+   \1. 设置一下程序的标题，通过构造方法的字符串参数
+   \2. 设置群主名称
+   \3. 设置分发策略：平均，还是随机？
+ 红包分发的策略：
+   \1. 普通红包（平均）：totalMoney / totalCount，余数放在最后一个红包当中。
+   \2. 手气红包（随机）：最少1分钱，最多不超过平均数的2倍。应该越发越少。
+
+```java
+（RedPacketFrame）（已经给出，是图形界面）
+（OpenMode）（已经给出，是运算接口）
+（Bootstrap）(包含main方法)
+public class Bootstrap {
+    public static void main(String[] args) {
+        MyRed red = new MyRed("传智播客双元课程");
+        // 设置群主名称
+        red.setOwnerName("王思聪");
+        // 普通红包
+        OpenMode normal = new NormalMode();
+        red.setOpenWay(normal);
+        // 手气红包
+        OpenMode random = new RandomMode();
+        red.setOpenWay(random);}}
+(MyRed)（生成图形界面的继承子类包）
+
+public class MyRed extends RedPacketFrame {
+   */**
+   ** *构造方法：生成红包界面。
+\*   **
+   \* @param* *title* *界面的标题
+\*   **/
+\*   public MyRed(String title) {
+     super(title);}
+
+（NormalMode）（普通红包运算方法包）
+
+public class NormalMode implements OpenMode {
+   @Override
+   public ArrayList<Integer> divide(final int totalMoney, final int totalCount) {
+ ArrayList<Integer> list = new ArrayList<>();
+
+ int avg = totalMoney / totalCount; *//* *平均值
+\* int mod = totalMoney % totalCount; *//* *余数，模，零头
+\* *//* *注意**totalCount - 1**代表，最后一个先留着
+\* for (int i = 0; i < totalCount - 1; i++) {
+ list.add(avg) }
+ *//* *有零头，需要放在最后一个红包当中
+\* list.add(avg + mod);
+ return list; }
+
+（RandomMode）（手气红包运算方法包）
+
+public class RandomMode implements OpenMode {
+   @Override
+   public ArrayList<Integer> divide(final int totalMoney, final int totalCount) {
+     ArrayList<Integer> list = new ArrayList<>();
+ Random r = new Random(); *//* *首先创建一个随机数生成器
+\* *// totalMoney**是总金额，**totalCount**是总份数，不变
+\* *//* *额外定义两个变量，分别代表剩下多少钱，剩下多少份
+\*     int leftMoney = totalMoney;
+     int leftCount = totalCount;
+     *//* *随机发前**n-1**个，最后一个不需要随机
+\* for (int i = 0; i < totalCount - 1; i++) {
+ *//* *按照公式生成随机金额
+\* int money = r.nextInt(leftMoney / leftCount * 2) + 1;
+ list.add(money); *//* *将一个随机红包放入集合
+\* leftMoney -= money; *//* *剩下的金额越发越少
+\* leftCount--; *//* *剩下还应该再发的红包个数，递减*}
+ *//* *最后一个红包不需要随机，直接放进去就得了
+\* list.add(leftMoney);
+ return list;}}
+```
+
+#### 11.10Lambda表达式
+
+函数式编程思想概述
+
+在数学中，函数就是有输入量、输出量的一套计算方案，也就是“拿数据做操作”
+
+面向对象思想强调“必须通过对象的形式来做事情”
+
+函数式思想则尽量忽略面向对象的复杂语法：“强调做什么，而不是以什么形式去做”，而Lambda表达式就是函数式思想的体现
+
+> Lambda表达式的标准格式
+>
+
+```
+●格式：(形式参数) -> {代码块}
+```
+
+o  形式参数：如果有多个参数，参数之间用逗号隔开；如果没有参数，留空即可
+
+o  ->：由英文中画线和大于符号组成，固定写法。代表指向动作
+
+o  代码块：是我们具体要做的事情，也就是以前我们写的方法体内容
+
+·     组成Lambda表达式的三要素：
+
+o  形式参数，箭头，代码块
+
+代码演示：
+
+```java
+*游泳接口**
+\* interface Swimming {
+ void swim()}
+ public class TestSwimming {
+ public static void main(String[] args) {
+ *//* *通过匿名内部类实现
+\* *goSwimming*(new Swimming() {
+ @Override
+ public void swim() {
+ System.*out*.println("铁汁, 我们去游泳吧");} });
+ */** *通过**Lambda**表达式实现，理解**:* *对于**Lambda**表达式**,* *对匿名内部类进行了优化***/*
+
+*goSwimming*(() -> System.*out*.println("铁汁, 我们去游泳吧"));}
+   */**
+   ** *使用接口的方法
+\*   **/
+\* public static void goSwimming(Swimming swimming) {
+ swimming.swim();}}
+```
+
+#### 11.11Lambda表达式的省略模式
+
+\- 省略的规则
+
+ \- 参数类型可以省略。但是有多个参数的情况下，不能只省略一个
+
+ \- 如果参数有且仅有一个，那么小括号可以省略
+
+ \- 如果代码块的语句只有一条，可以省略大括号和分号，和return关键字
+
+代码演示：
+
+```java
+public interface Addable {
+   int add(int x, int y);}
+ public interface Flyable {
+   void fly(String s);}
+ public class LambdaDemo {
+   public static void main(String[] args) {
+ *//useAddable((int x,int y) -> {
+ // return x + y;
+ //});
+ //**参数的类型可以省略
+\* *useAddable*((x, y) -> {
+ return x + y;});
+ *//    useFlyable((String s) -> {
+ //      System.out.println(s);
+ //    });
+     //**如果参数有且仅有一个，那么小括号可以省略
+\* *//    useFlyable(s -> {
+ //      System.out.println(s);
+ //    });
+     //**如果代码块的语句只有一条，可以省略大括号和分号
+\*     *useFlyable*(s -> System.*out*.println(s));
+     *//**如果代码块的语句只有一条，可以省略大括号和分号，如果有**return**，**return**也要省略掉
+\*     *useAddable*((x, y) -> x + y);}
+   private static void useFlyable(Flyable f) {
+     f.fly("风和日丽，晴空万里");}
+   private static void useAddable(Addable a) {
+     int sum = a.add(10, 20);
+     System.*out*.println(sum);}}
+```
+
+#### 11.12Lambda表达式和匿名内部类的区别
+
+\- 所需类型不同
+
+ \- 匿名内部类：可以是接口，也可以是抽象类，还可以是具体类
+
+ \- Lambda表达式：只能是接口
+
+\- 使用限制不同
+
+ \- 如果接口中有且仅有一个抽象方法，可以使用Lambda表达式，也可以使用匿名内部类
+
+ \- 如果接口中多于一个抽象方法，只能使用匿名内部类，而不能使用Lambda表达式
+
+\- 实现原理不同
+
+ \- 匿名内部类：编译之后，产生一个单独的.class字节码文件
+
+ \- Lambda表达式：编译之后，没有一个单独的.class字节码文件。对应的字节码会在运行的时候动态生成
+
+### Demo12_Git
+
+12.1Git安装
+
+安装完成后有
+
+\1.   Git GUI：Git提供的图形界面工具
+
+\2.   Git Bash：Git提供的命令行工具
+
+运行git命令行 输入git –version 可以查看git版本
+
+#### 12.2Git常用命令
+
+| **命令**                 | **作用**                                             |
+| ------------------------ | ---------------------------------------------------- |
+| git init                 | 初始化，创建 git 仓库                                |
+| git status               | 查看 git 状态  （文件是否进行了添加、提交操作）      |
+| git add 文件名           | 添加，将指定文件添加到暂存区                         |
+| git commit -m '提交信息' | 提交，将暂存区文件提交到历史仓库                     |
+| git log                  | 查看日志（ git 提交的历史日志）                      |
+| git reflog               | 可以查看所有分支的操作记录（包括被删除的commit记录） |
+
+#### 12.3Git基本工作流程
+
+​                               ![image-20210402010221532](JavaEE.assets/image-20210402010221532.png)
+
+\1. 创建工作目录、初始化本地 git 仓库
+
+\2. 新建一个 test.txt 文件（暂不执行添加操作）
+
+\3. 使用 status 命令，查看状态
+
+\4. 使用 add 命令添加，并查看状态
+
+\5. 使用 commit 命令，提交到本地历史仓库
+
+\6. 使用 log 命令，查看日志
+
+\7. 修改 test.txt 文件
+
+\8. 添加并提交，查看日志
+
+#### 12.4历史版本切换
+
+准备动作：
+
+\1.   查看log日志
+
+Git reflog：可以查看所有分支的操作记录（包括被删除的commit记录）
+
+\2. 增加一次新的修改记录
+
+需求：将代码切换到，第二次修改的版本
+
+指令：git reset –hard版本唯一索引值
+
+####  12.5**分支管理介绍**
+
+分支：由每次提交的代码，串成的一条时间线
+
+使用场景：
+
+\1.   周期较长的模块开发
+
+\2. 常识性的模块开发
+
+分支工作流程：
+
+\1. 创建新分支
+
+\2. 切换分支
+
+\3. 合并分支
+
+\4. 删除分支
+
+创建和切换：
+
+创建命令： git branch分支名
+
+切换分支：git checkout分支名
+
+查看文件命令：ls
+
+查看分支列表：git branch
+
+合并分支：git merge分支名
+
+删除分支：git branch -d 分支名
+
+不同分支之间的关系是平行的关系，不会相互影响
+
+#### 12.6远程仓库：
+
+远程仓库工作流程：
+
+远程仓库 代码托管平台（部署在公网的一个网站）
+
+ ![image-20210402010200691](JavaEE.assets/image-20210402010200691.png)
+
+
+
+> 情况1：先有本地仓库，远程仓库为空
+
+
+
+步骤：
+
+- 一．创建远程仓库
+
+
+- 二.将项目从本地仓库，推送到远程仓库
+
+
+- 三.推送代码
+
+
+一．创建远程仓库:
+
+注意：在推送代码前，需要先配置SSH（一种协议）公钥
+
+生成SSH公钥步骤
+
+​       \1. 设置Git账户
+
+\+ git config user.name（查看git账户）
+
+\+ git config user.email（查看git邮箱）
+
+\+ git config --global user.name “账户名”（设置全局账户名）
+
+\+ git config --global user.email “邮箱”（设置全局邮箱）
+
+\+ cd ~/.ssh（查看是否生成过SSH公钥）
+
+ 
+
+​       \2. 生成SSH公钥
+
+生成命令: ssh-keygen –t rsa –C “邮箱” ( 注意：这里需要敲3次回车)
+
+查看命令: cat ~/.ssh/id-rsa.pub
+
+​      \3. 设置账户公钥
+
+找到SSH公钥并粘贴
+
+​       \4. 公钥测试
+
+命令: ssh -T [git@gitee.com](mailto:git@gitee.com)
+
+二.将项目从本地仓库，推送到远程仓库
+
+步骤：
+
+​      \1.      为远程仓库的URL，自定义仓库名称
+
+​      \2.   推送
+
+命令：
+
+git remote add 远程名称 远程仓库URL
+
+git push -u 仓库名称 分支名
+
+> 情况2：先有远程仓库，本地仓库为空
+>
+
+步骤
+
+\1. 将远程仓库的代码，克隆到本地仓库
+
+   克隆命令：git clone 仓库地址
+
+\2. 创建新文件，添加并提交到本地仓库
+
+\3. 推送至远程仓库
+
+\4. 项目拉取更新
+
+  拉取命令：git pull 远程仓库名 分支名
+
+#### 12.7注意：代码冲突
+
+ ![image-20210402010142401](JavaEE.assets/image-20210402010142401.png)
+
+如何解决冲突
+
+<<<<<<<和>>>>>>>中间的内容,就是冲突部分
+
+\1. 修改冲突行，保存，即可解决冲突。
+
+\2. 重新add冲突文件并commit到本地仓库，重新push到远程
+
+#### 12.8IDEA集成Git
+
+> **一．IDEA中配置Git**
+
+1.file-Settings
+
+2.Version Control -> Git -> 指定git.exe存放目录
+
+\3. 点击Test测试
+
+> **二．创建本地仓库**
+
+\1. VCS->Import into Version Control->Create Git Repository
+
+\2. 选择工程所在的目录,这样就创建好本地仓库了
+
+\3. 点击git后边的对勾,将当前项目代码提交到本地仓库
+
+注意: 项目中的配置文件不需要提交到本地仓库中,提交时,忽略掉即可
+
+> **三．本地仓库的版本切换**
+
+方式一: 控制台Version Control->Log->Reset Current Branch...->Reset
+
+这种切换的特点是会抛弃原来的提交记录
+
+方式二:控制台Version Control->Log->Revert Commit->Merge->处理代码->commit
+
+这种切换的特点是会当成一个新的提交记录,之前的提交记录也都保留
+
+> **四．分支管理**
+
+创建分支
+
+VCS->Git->Branches->New Branch->给分支起名字->ok
+
+切换分支
+
+idea右下角Git->选择要切换的分支->checkout
+
+合并分支
+
+VCS->Git->Merge changes->选择要合并的分支->merge
+
+删除分支
+
+idea右下角->选中要删除的分支->Delete
+
+> **五．本地仓库推送到远程仓库**
+
+VCS->Git->Push->点击master Define remote
+
+将远程仓库的路径复制过来->Push
+
+> **六．远程仓库克隆到本地仓库**
+
+File->Close Project->Checkout from Version Control->Git->指定远程仓库的路径->指定本地存放的路径->clone
+
